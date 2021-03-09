@@ -4,9 +4,11 @@ steps:
   args:
   - '-c'
   - |-
-    git clone 
+    git clone https://github.com/AnnieBem/base-npm.git
     ls -l
-    cd 
+    cd base-npm && git checkout Build_Optimization
+    cp src/App/Webapp/package.json /workspce/base-npm/.
+    cp src/App/Webapp/vueapp/package.json /workspace/base-npm/vue_package.json
 
 steps:
 - name: gcr.io/cloud-builders/docker
