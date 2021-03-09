@@ -45,4 +45,4 @@ steps:
     cp src/App/Webapp/vueapp/package.json /workspace/vue_package.json
 
 - name: gcr.io/cloud-builders/docker
-  args: [ 'build', '-t', 'gcr.io/my-first-project/base-npm', '.']
+  args: ['build', '-t', 'gcr.io/myfirstproject-304920/base-npm', '.']
