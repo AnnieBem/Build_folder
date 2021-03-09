@@ -41,8 +41,8 @@ steps:
     ls -l
     pwd
     cd base-npm && git checkout Build_Optimization
-    cp src/App/Webapp/package.json /workspace/base-npm/.
-    cp src/App/Webapp/vueapp/package.json /workspace/base-npm/vue_package.json
+    cp src/App/Webapp/package.json /workspace/.
+    cp src/App/Webapp/vueapp/package.json /workspace/vue_package.json
 
 - name: gcr.io/cloud-builders/docker
   args: [ 'build', '-t', 'gcr.io/my-first-project/base-npm', '.']
