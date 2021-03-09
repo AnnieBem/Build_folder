@@ -1,0 +1,13 @@
+steps:
+- name: gcr.io/cloud-builders/git
+  entrypoint: 'bash'
+  args:
+  - '-c'
+  - |-
+    git clone 
+    ls -l
+    cd 
+
+steps:
+- name: gcr.io/cloud-builders/docker
+  args: [ 'build', '-t', 'gcr.io/my-first-project/base-npm', '.']
